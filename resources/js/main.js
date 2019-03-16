@@ -1,4 +1,4 @@
-function crossBtnClick() {
+crossBtnClick = () => {
     let mainContainer = document.getElementById("mainHolder");
     if(mainContainer.className == "animate_main") {
         mainContainer.className = "reverse_animate";
