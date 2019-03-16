@@ -1,0 +1,237 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
+
+/** =======
+Ankur Sehdev 
+========= **/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/**https://www.flaticon.com/authors/sebastien-gabriel **/
+
+.purple {
+  background-color: #6d0eff;
+}
+
+#mainHolder {
+  /** remove this for original size **/
+  zoom: 2;
+
+  padding: 10px 10px;
+  border-radius: 30px;
+  color: #fff;
+  /* border: 1px solid #000; */
+  display: flex;
+  width: 180px;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transform-origin: 25px 25px;
+  
+  /** https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin **/
+
+  background: #6d0eff;
+  box-shadow: 0px 5px 25px 9px #8975fb9c;
+}
+
+.animate_main {
+  -webkit-animation: spin 0.8s cubic-bezier(0.8, 0, 0.2, 1);
+  animation: spin 0.8s cubic-bezier(0.8, 0, 0.2, 1);
+}
+
+.reverse_animate {
+  -webkit-animation: respin 0.8s cubic-bezier(0.8, 0, 0.2, 1);
+  animation: respin 0.8s cubic-bezier(0.8, 0, 0.2, 1);
+}
+
+
+@-webkit-keyframes spin {
+  50% {
+  -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+  }
+  100% {
+  -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@keyframes spin {
+  50% {
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes respin {
+  50% {
+  -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+  100% {
+  -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@keyframes respin {
+  50% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+.circle-holder {
+  background: url(../images/plus.png) 0 0px;
+  height: 30px;
+  width: 30px;
+  background-size: 30px 30px;
+  margin-right: 20px;
+  cursor: pointer;
+
+  /* transition: transform 0.4s cubic-bezier(0.35, -0.27, 0.66, 1.24) 0s; */
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+}
+
+.animate_main .circle-holder{
+  transform: rotate(-45deg);
+}
+
+
+
+#mainHolder > input.search {
+  /* border: 1px solid #000; */
+  border: none;
+  padding: 0 10px;
+  border-radius: 15px;
+  width: 108px;
+  background: #7b54ed;
+  color: #fff;
+}
+
+.search{
+  /* transition: transform 0.4s cubic-bezier(0.35, -0.27, 0.66, 1.24) 0s; */
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Safari 3-8 */
+  transform: rotate(0deg);
+  transform-origin: -35px 15px;
+}
+
+.search::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.animate_main > .search{
+  -ms-transform: rotate(-90deg); /* IE 9 */
+  -webkit-transform: rotate(-90deg); /* Safari 3-8 */
+  transform: rotate(-90deg);
+}
+
+.icons {
+  position: absolute;
+  left: 60px;
+  display: flex;
+  /* transition: transform 0.4s cubic-bezier(0.35, -0.27, 0.66, 1.24) 0s; */
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transform: rotate(90deg);
+  transform-origin: -35px 15px;
+}
+
+.animate_main > .icons {
+  -ms-transform: rotate(0deg) !important; /* IE 9 */
+  -webkit-transform: rotate(0deg) !important; /* Safari 3-8 */
+  transform: rotate(0deg) !important
+}
+
+.icons > button {
+  /* background: url(../images/circle.png) 0 0px; */
+  height: 30px;
+  width: 30px;
+  background-size: 30px 30px;
+  margin-right: 20px;
+  border: none;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.camera {
+  transition: transform 0.2s ease-in-out 0s;
+  background: url(../images/camera.png) 0 0px;
+}
+.mic {
+  transition: transform 0.25s ease-in-out 0s;
+  background: url(../images/mic.png) 0 0px;
+}
+
+.music {
+  transition: transform 0.3s ease-in-out 0s;
+  background: url(../images/music.png) 0 0px;
+}
+
+.icons > button:last-child {
+  margin: 0
+}
