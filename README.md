@@ -1,8 +1,10 @@
 # chat-bar-interaction
 
-I was just checking some instagram posts and found this interesting chat bar interaction by [](). Just wanted to experiement with css animations as it's been a while I have tried them.
+I was just checking some instagram posts and found this interesting chat bar interaction by [Oleg Frolov](https://www.instagram.com/p/Bu3Ek9OheRU/?utm_source=ig_share_sheet&igshid=znkv2bc2rn2m). 
 
-Just a quick implementation, feel free to check the author page as it have other beautiful UX designs!
+Just wanted to experiement with css animations as it's been a while I have tried them.
+
+A quick implementation, feel free to check the author page as it have other beautiful UX designs!
 
 Here is the link to instagram post and author is: [Oleg Frolov](https://www.instagram.com/p/Bu3Ek9OheRU/?utm_source=ig_share_sheet&igshid=znkv2bc2rn2m).
 
