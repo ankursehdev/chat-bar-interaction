@@ -14,7 +14,7 @@ Feel free to advise something, if I can tweek some animations in better way.
 
 The chat window is "Zoomed to 2", incase you want to use it in normal size please remove "zoom: 2;" in main.css on line number: 74.
 
-##What it looks like?
+## What it looks like?
 <img src="inspiration.gif" alt="Chat bar Interaction GIF"/>
 
 ## License
